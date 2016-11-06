@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>卖家云</title>
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="select2/select2.min.css"/>
+<link rel="stylesheet" type="text/css" href="datarangepicker/daterangepicker-bs3.css"/>
+<link rel="stylesheet" type="text/css" href="datatable/media/css/jquery.dataTables.css"/>
+<link rel="stylesheet" type="text/css" href="css/Account Management.css"/>
+<script src="jQuery/jquery-2.1.1.min.js"></script>
+<script src="select2/select2.js"></script>
+<script src="datarangepicker/moment.js"></script>
+<script src="datarangepicker/daterangepicker.js"></script>
+<script src="datatable/media/js/jquery.dataTables.js"></script>
+<script src="js/Account Management.js"></script>
+</head>
+
+<body>
+<div class="all">
+    <section class="container-fluid">
+        <div class="row">
+            <article class="col-lg-1 left_c">
+                <ul>
+                    <li><div><span class="glyphicon glyphicon-home font_icon"></span><br>入库单</div></li>
+                    <li><div><span class="glyphicon glyphicon-home font_icon"></span><br>出库单</div></li>
+                    <li><div><span class="glyphicon glyphicon-lock font_icon"></span><br>锁定</div></li>
+                </ul>
+            </article>
+            <article class="col-lg-11 right_c">
+                <div class="container-fluid">
+                    <div class="row">
+                        <section class="col-lg-12 right_c_top">
+                            <ul>
+                                <li>账户详情</li>
+                                <li>账户管理</li>
+                                <li>账户申请</li>
+                            </ul>
+                            <div>
+                            <input class="inpuone" type="text" placeholder="请输入编号查询"/>
+                            <input class="inputwo" type="button" value="查询"/>
+                        </section>
+                        <section class="col-lg-12 right_c_bottom">
+                            <div class="query_div">
+                            	<div class="query_div_t">账户管理</div>
+                                <div class="query_div_m">
+                                	<div class="col-lg-5 query_div_m_left">
+                                    	<input type="text" placeholder="请输入用户名"/><br>
+                                      <input type="text" name="reservation"id="reservation" class="form-control"value="03/18/2013 - 03/23/2013" />
+                                    </div>
+                                    <div class="col-lg-5 col-lg-offset-2 query_div_m_right">
+                                    	<select class="js-example-basic-single select2">
+                                              <option value="AL">Alabama</option>
+                                              <option value="AL">Alabama</option>
+                                              <option value="WY">Wyoming</option>
+                                        </select><br>
+                                        <input id="bianhao" type="text" placeholder="请输入编号"/>
+                                    </div>
+                                </div>
+                                <div class="query_div_b">查询</div>
+                            </div>
+                            <div class="listtable">
+                            	<table id="table_id_example" class="display">
+                                    <thead>
+                                        <tr>
+                                            <th>编码</th>
+                                            <th>名称</th>
+                                            <th>备注</th>
+                                            <th>状态</th>
+                                            <th>创建时间</th>
+                                            <th>登录时间</th>
+                                            <th>账号类型</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Row 1 Data 1</td>
+                                            <td>Row 1 Data 2</td>
+                                            <td>Row 1 Data 1</td>
+                                            <td>Row 1 Data 2</td>
+                                            <td>Row 1 Data 1</td>
+                                            <td>Row 1 Data 2</td>
+                                            <td>Row 1 Data 1</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>Row 2 Data 1</td>
+                                            <td>Row 2 Data 2</td>
+                                            <td>Row 2 Data 1</td>
+                                            <td>Row 2 Data 2</td>
+                                            <td>Row 2 Data 1</td>
+                                            <td>Row 2 Data 2</td>
+                                            <td>Row 2 Data 1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</div>
+</body>
+</html>
